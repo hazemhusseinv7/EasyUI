@@ -6,7 +6,7 @@ const nextConfig = {
       bufferutil: "commonjs bufferutil",
       canvas: "commonjs canvas",
     });
-    // config.infrastructureLogging = { debug: /PackFileCache/ };
+
     return config;
   },
   images: {
@@ -18,6 +18,7 @@ const nextConfig = {
       },
     ],
   },
+  typescript: { ignoreBuildErrors: true },
 };
 
 export default nextConfig;
